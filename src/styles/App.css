@@ -1,0 +1,210 @@
+.App {
+  font-family: 'Suranna', serif;
+  text-align: center;
+  background: url('../assets/noise_3.png'),
+    linear-gradient(
+      180deg,
+      rgba(87, 169, 254, 1) 0%,
+      rgba(253, 253, 249, 1) 20%,
+      rgba(253, 253, 249, 1) 80%,
+      rgba(217, 233, 175, 1) 100%
+    );
+  height: 100%;
+  overflow: hidden;
+}
+
+.sun-moon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10vw;
+  padding-top: 2vh;
+}
+
+.sun {
+  max-width: 8%;
+}
+
+.moon {
+  max-width: 3%;
+}
+
+.cloud-container {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  margin-bottom: 10vh;
+}
+
+.cloud-small {
+  width: 20%;
+}
+
+.m1 {
+  position: relative;
+  -webkit-animation: moveclouds 35s linear infinite;
+  -moz-animation: moveclouds 35s linear infinite;
+  -o-animation: moveclouds 35s linear infinite;
+}
+.m2 {
+  position: relative;
+  -webkit-animation: movecloudsBig 55s linear infinite;
+  -moz-animation: movecloudsBig 55s linear infinite;
+  -o-animation: movecloudsBig 55s linear infinite;
+}
+
+@keyframes moveclouds {
+  0% {
+    margin-left: -23vw;
+  }
+  100% {
+    margin-left: 100vw;
+  }
+}
+@-moz-keyframes moveclouds {
+  0% {
+    margin-left: 100vw;
+  }
+  100% {
+    margin-left: -100vw;
+  }
+}
+@-o-keyframes moveclouds {
+  0% {
+    margin-left: 100vw;
+  }
+  100% {
+    margin-left: -100vw;
+  }
+}
+@keyframes movecloudsBig {
+  0% {
+    margin-left: -35vw;
+  }
+  100% {
+    margin-left: 100vw;
+  }
+}
+@-moz-keyframes movecloudsBig {
+  0% {
+    margin-left: 100vw;
+  }
+  100% {
+    margin-left: -100vw;
+  }
+}
+@-o-keyframes movecloudsBig {
+  0% {
+    margin-left: 100vw;
+  }
+  100% {
+    margin-left: -100vw;
+  }
+}
+
+.cloud-big {
+  width: 30%;
+  top: -30px;
+}
+
+.mount-stupa-container {
+  position: relative;
+  padding: 0 1vw;
+}
+
+.stupa {
+  position: absolute;
+  width: 35%;
+  top: -20vh;
+  left: 33%;
+}
+
+.cow-deer-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 8vw 5vh;
+}
+
+.deer {
+  width: 20%;
+}
+
+.cow {
+  width: 15%;
+}
+
+.grass-naga-container {
+  margin-top: auto;
+  padding: 1vw;
+}
+
+.naga {
+  position: absolute;
+  left: 40%;
+  width: 20%;
+}
+
+.title-text {
+  font-size: 4rem;
+  line-height: 1em;
+  margin: 2vw 0;
+  color: #3c613f;
+}
+
+.body-text {
+  font-size: 1.6rem;
+  line-height: 1.4em;
+  margin: 0 15vw 5vw;
+  color: #3c613f;
+}
+
+@media only screen and (max-width: 414px) {
+  .App {
+    background: url('../assets/noise_3.png'),
+      linear-gradient(
+        180deg,
+        rgba(87, 169, 254, 1) 0%,
+        rgba(253, 253, 249, 1) 15%,
+        rgba(253, 253, 249, 1) 85%,
+        rgba(217, 233, 175, 1) 100%
+      );
+  }
+  .sun {
+    max-width: 12%;
+  }
+
+  .moon {
+    max-width: 5%;
+  }
+  .stupa {
+    width: 50%;
+    top: -6vh;
+    left: 25%;
+  }
+  .cow-deer-container {
+    margin: 0 3vw 3vh;
+  }
+  .deer {
+    width: 25%;
+    margin-top: 8vh;
+  }
+
+  .cow {
+    width: 20%;
+  }
+  .title-text {
+    font-size: 2.5rem;
+    margin: 2vw 0;
+  }
+  .body-text {
+    font-size: 1.2rem;
+    line-height: 1.2em;
+    margin: 0 10vw 5vw;
+  }
+  .cloud-small {
+    width: 25%;
+  }
+  .cloud-big {
+    width: 35%;
+  }
+}
