@@ -142,6 +142,7 @@
 }
 
 .grass-naga-container {
+  display: flex;
   margin-top: auto;
   padding: 0 1vw;
 }
