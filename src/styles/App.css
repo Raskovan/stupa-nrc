@@ -13,6 +13,14 @@
   overflow: hidden;
 }
 
+.border {
+  padding: 50px 50px 150px;
+  background: #401c1c;
+  background-image: url('../assets/nrc-symb.svg');
+  background-size: 100px 100px;
+  background-repeat: space;
+}
+
 .sun-moon-container {
   display: flex;
   align-items: center;
@@ -55,10 +63,10 @@
 
 @keyframes moveclouds {
   0% {
-    margin-left: -23vw;
+    margin-left: 100vw;
   }
   100% {
-    margin-left: 100vw;
+    margin-left: -23vw;
   }
 }
 @-moz-keyframes moveclouds {
@@ -66,7 +74,7 @@
     margin-left: 100vw;
   }
   100% {
-    margin-left: -100vw;
+    margin-left: -23vw;
   }
 }
 @-o-keyframes moveclouds {
@@ -74,15 +82,15 @@
     margin-left: 100vw;
   }
   100% {
-    margin-left: -100vw;
+    margin-left: -23vw;
   }
 }
 @keyframes movecloudsBig {
   0% {
-    margin-left: -35vw;
+    margin-left: 100vw;
   }
   100% {
-    margin-left: 100vw;
+    margin-left: -35vw;
   }
 }
 @-moz-keyframes movecloudsBig {
@@ -104,7 +112,7 @@
 
 .cloud-big {
   width: 30%;
-  top: -30px;
+  top: -35px;
 }
 
 .mount-stupa-container {
@@ -135,7 +143,7 @@
 
 .grass-naga-container {
   margin-top: auto;
-  padding: 1vw;
+  padding: 0 1vw;
 }
 
 .naga {
@@ -169,6 +177,12 @@
         rgba(217, 233, 175, 1) 100%
       );
   }
+  .border {
+    padding: 30px 30px 100px;
+    background-size: 60px 60px;
+    background-repeat: space;
+  }
+
   .sun {
     max-width: 12%;
   }
@@ -194,7 +208,7 @@
   }
   .title-text {
     font-size: 2.5rem;
-    margin: 2vw 0;
+    margin: 2vw 5vw;
   }
   .body-text {
     font-size: 1.2rem;
