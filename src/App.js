@@ -5,6 +5,9 @@ function App() {
   return (
     <div className="border">
       <div className="App" style={{ display: 'flex', flexDirection: 'column' }}>
+        <header className="content_container">
+          <div className="dw_logo" />
+        </header>
         <div className="sun-moon-container">
           <img
             src={require('./assets/nrc-sun.png')}
