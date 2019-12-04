@@ -138,7 +138,6 @@
 
 .mount-stupa-container {
   position: relative;
-  padding: 0 1vw;
 }
 
 .stupa {
@@ -165,7 +164,6 @@
 .grass-naga-container {
   display: grid;
   margin-top: auto;
-  padding: 0 1vw;
 }
 
 .naga {
@@ -228,7 +226,7 @@
     left: 25%;
   }
   .cow-deer-container {
-    margin: 0 3vw 3vh;
+    margin: 0 3vw;
   }
   .deer {
     width: 25%;
