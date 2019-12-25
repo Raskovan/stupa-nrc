@@ -7,9 +7,47 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
   background: #401c1c;
+  font-family: 'Suranna', serif;
+  text-align: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* ADMIN STYLES */
+
+form {
+  position: relative;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: inherit;
+}
+
+textarea {
+  width: 100%;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: inherit;
+  padding: 0;
+  margin: 0 !important;
+}
+
+input[type='submit'] {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  border: 0;
+}
+
+input[type='submit']:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
 }
